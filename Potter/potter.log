@@ -1,0 +1,42 @@
+2025-10-18 22:46:56,960 - INFO - Could not import comtypes.gen, trying to create it.
+2025-10-18 22:46:56,960 - INFO - Created comtypes.gen directory: 'C:\python projects\.venv\Lib\site-packages\comtypes\gen'
+2025-10-18 22:46:56,960 - INFO - Writing __init__.py file: 'C:\python projects\.venv\Lib\site-packages\comtypes\gen\__init__.py'
+2025-10-18 22:46:56,972 - INFO - Using writeable comtypes cache directory: 'C:\python projects\.venv\Lib\site-packages\comtypes\gen'
+2025-10-18 22:46:56,986 - INFO - Could not import comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4: No module named 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4'
+2025-10-18 22:46:56,990 - INFO - # Generating comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4
+2025-10-18 22:46:57,059 - INFO - # Generating comtypes.gen.SpeechLib
+2025-10-18 22:46:57,065 - INFO - Could not import comtypes.gen._00020430_0000_0000_C000_000000000046_0_2_0: No module named 'comtypes.gen._00020430_0000_0000_C000_000000000046_0_2_0'
+2025-10-18 22:46:57,066 - INFO - # Generating comtypes.gen._00020430_0000_0000_C000_000000000046_0_2_0
+2025-10-18 22:46:57,073 - INFO - # Generating comtypes.gen.stdole
+2025-10-18 22:46:57,650 - INFO - TTS инициализирован
+2025-10-18 22:46:57,650 - ERROR - Модель Vosk не найдена: vosk-model-small-ru-0.22
+2025-10-18 22:46:57,650 - ERROR - Скачайте модель с https://alphacephei.com/vosk/models
+2025-10-18 22:46:57,650 - INFO - Potter говорит: Модель распознавания речи не найдена. Проверьте установку.
+2025-10-18 22:50:45,699 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\python projects\\.venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-10-18 22:50:45,699 - INFO - Using writeable comtypes cache directory: 'C:\python projects\.venv\Lib\site-packages\comtypes\gen'
+2025-10-18 22:50:45,787 - INFO - TTS инициализирован
+2025-10-18 22:50:46,254 - INFO - Vosk модель загружена из vosk-model-small-ru-0.22
+2025-10-18 22:50:46,503 - INFO - Аудио поток инициализирован
+2025-10-18 22:50:46,503 - INFO - Potter ассистент инициализирован успешно
+2025-10-18 22:50:46,503 - INFO - Potter говорит: Голосовой ассистент Поттер запущен
+2025-10-18 22:50:50,162 - INFO - Potter запущен и готов к работе
+2025-10-18 22:50:50,162 - INFO - Ожидание ключевого слова 'поттер'...
+2025-10-18 22:51:25,240 - INFO - Получен сигнал остановки
+2025-10-18 22:51:25,240 - INFO - Potter говорит: Завершаю работу
+2025-10-18 22:51:25,336 - INFO - Ресурсы освобождены
+2025-10-18 23:03:26,520 - INFO - Coqui TTS недоступен, использую pyttsx3
+2025-10-18 23:03:26,559 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\python projects\\.venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-10-18 23:03:26,559 - INFO - Using writeable comtypes cache directory: 'C:\python projects\.venv\Lib\site-packages\comtypes\gen'
+2025-10-18 23:03:26,638 - INFO - Найден женский русский голос: Microsoft Irina Desktop - Russian
+2025-10-18 23:03:26,639 - INFO - pyttsx3 TTS инициализирован (женский голос)
+2025-10-18 23:03:27,151 - INFO - Vosk модель загружена из vosk-model-small-ru-0.22
+2025-10-18 23:03:27,392 - INFO - Аудио поток инициализирован
+2025-10-18 23:03:27,392 - INFO - Создание новой AI модели для персонализации
+2025-10-18 23:03:27,392 - ERROR - Критическая ошибка: 'PotterAssistant' object has no attribute '_load_cache'
+Traceback (most recent call last):
+  File "D:\Учёба\Potter\potter.py", line 932, in main
+    assistant = PotterAssistant()
+  File "D:\Учёба\Potter\potter.py", line 69, in __init__
+    self.weather_cache = self._load_cache()
+                         ^^^^^^^^^^^^^^^^
+AttributeError: 'PotterAssistant' object has no attribute '_load_cache'. Did you mean: '_save_cache'?
